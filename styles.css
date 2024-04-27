@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.intro {
+    width: 35%; /* Ширина контейнера */
+    margin: 20px auto; /* Выравнивание по центру */
+    border: 5px solid transparent; /* Прозрачная рамка */
+    
+    border-radius: 20px; /* Скругление углов */
+    overflow: hidden; /* Отсекаем все, что выходит за границы рамки */
+    box-sizing: border-box; /* Учитываем padding в общей высоте */
+}
+.intro-top {
+    background-color: #2F3136;
+    flex: 3;
+    text-align: center;
+    color: #ffffff; /* Белый цвет текста на серой части */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.intro-top h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.intro-bottom {
+    background-color: #202225;
+    flex: 7;
+    text-align: center;
+    color: #ffffff; /* Белый цвет текста на черной части */
+    padding: 0;
+    box-sizing: border-box; /* Учитываем padding в общей высоте */
+}
+.intro-bottom p{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 10px 10px;
+}
+.people_right{
+    font-size: 48px;
+    background-color: #202225;
+    text-align: center;
+    color: #ffffff;
+    width: 554px auto;
+    height: 333px auto;
+    top: 333px auto;
+    left: 605px auto;
+    margin-right: 50px auto;
+    border: 5px solid transparent;      
+}
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 600px) {
+    .intro {
+        width: 90%; /* Уменьшаем ширину контейнера */
+    }
+
+    .intro-top, .intro-bottom {
+        flex: 1; /* Делаем серую и черную части равными по высоте */
+    }
+}
